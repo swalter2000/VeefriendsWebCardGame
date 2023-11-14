@@ -135,14 +135,14 @@ function createPredefinedDeck() {
             'spectacular': "images/ant_spectacular.png"
         }),
         new Card("Proactive Piranha", 19, 18, 22, {
-            'base': "images/piranha.png",
+            'base': "images/pirahna.png", /* Pirahna is spell wrong on purpose to match file name */
             'rare': "images/piranha_rare.png",
             'veryRare': "images/piranha_veryRare.png",
             'epic': "images/piranha_epic.png",
             'spectacular': "images/piranha_spectacular.png"
         }),
         new Card("Chill Chinchilla", 19, 20, 21, {
-            'base': "images/chinchilla.png",
+            'base': "images/chill.png", /* different base name chill vs chinchinlla */
             'rare': "images/chinchilla_rare.png",
             'veryRare': "images/chinchilla_veryRare.png",
             'epic': "images/chinchilla_epic.png",
@@ -221,7 +221,7 @@ function createPredefinedDeck() {
 
         // ... (continue adding any remaining cards) ...
         // ... Continue with the rest of the cards in a similar fashion ...
-    ];
+    ]
 
     // Assign rarities to approximately 25% of the cards
     predefinedCards.forEach(card => {
