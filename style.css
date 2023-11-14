@@ -113,7 +113,7 @@ body {
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .playmat {
-        background-image: none;
+      /*  background-image: none; */
     }
 
     .card {
@@ -209,4 +209,33 @@ body {
     #responseButtons button:hover {
         background-color: #45a049; /* Slightly darker shade on hover */
     }
+}
+
+/* iPhone SE Sizing */
+@media only screen and (max-width: 320px) {
+    /* Adjust the playmat for iPhone SE */
+    .playmat {
+        /* Your specific styles for iPhone SE playmat */
+        /* For example: */
+        min-height: 150px; /* Adjusted height */
+        /* Other adjustments as needed */
+    }
+
+    /* Adjust buttons for iPhone SE */
+    .challenge-buttons button,
+    #responseButtons button {
+        font-size: 1.5em; /* Smaller font size for smaller screen */
+        padding: 10px 20px; /* Adjust padding */
+        /* Other button adjustments as needed */
+    }
+    .challenge-buttons button,
+    #responseButtons button {
+        font-size: 1em; /* Significantly smaller font size */
+        padding: 3px 8px; /* Reduced padding */
+        margin: 5px; /* Reduced margin */
+        /* Optionally adjust width and height if they are set */
+        /* width: 70%; height: auto; for example */
+
+    /* Other specific adjustments for iPhone SE */
+    /* ... */
 }
