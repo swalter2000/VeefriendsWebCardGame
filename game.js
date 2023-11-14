@@ -298,7 +298,7 @@ function proposeChallenge(attribute) {
 }
 
 function simulatePlayer2Response() {
-    const acceptChallenge = Math.random() > 0.5;
+    const acceptChallenge = Math.random() > 0.8;
     if (acceptChallenge) {
         respondToChallenge(true);
     } else {
