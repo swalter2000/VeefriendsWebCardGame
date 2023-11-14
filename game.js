@@ -225,7 +225,7 @@ function createPredefinedDeck() {
 
     // Assign rarities to approximately 25% of the cards
     predefinedCards.forEach(card => {
-        if (Math.random() < 0.07) {
+        if (Math.random() < 0.00) {
             const rarities = ["rare", "veryRare", "epic", "spectacular"];
             card.rarity = rarities[Math.floor(Math.random() * rarities.length)];
         }

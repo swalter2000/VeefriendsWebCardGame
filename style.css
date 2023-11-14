@@ -16,8 +16,7 @@
 
 
 .card-back {
-    background-color: #444;
-    color: #fff;
+    background-image: url('images/VFCardBack.png');
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -101,6 +100,13 @@ body {
 #instructionsButton:hover {
     background-color: #45a049;
 }
+.challenge-buttons button:disabled,
+#responseButtons button:disabled {
+    background-color: #ccc; /* Gray background for disabled buttons */
+    color: #666; /* Darker text color for contrast */
+    cursor: not-allowed; /* Cursor to indicate the button is disabled */
+    border: 1px solid #999; /* Optional: adds a border to disabled buttons */
+}
 
 
 /* Mobile ... */
@@ -173,7 +179,7 @@ body {
 
     /* Adjust the player2Mat for mobile */
     #player2Mat {
-        margin-bottom: 150px; /* Add bottom margin */
+        margin-bottom: 110px; /* Add bottom margin */
         transform: rotate(180deg); /* Keep the flip for player 2 */
         /* Other styles as needed */
     }
