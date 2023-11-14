@@ -176,6 +176,24 @@ body {
     }
 }
 
+/* Styles for screen widths between 370 and 430 pixels */
+@media only screen and (min-width: 370px) and (max-width: 430px) {
+    .challenge-buttons button,
+    #responseButtons button {
+        font-size: 0.7em; /* Smaller font size for specific screen width */
+        padding: 6px 8px; /* Reduced padding */
+        margin: 0 2px; /* Reduced margin */
+        /* Adjust border-radius, border, background-color, color, etc., if needed */
+    }
+
+    .challenge-buttons,
+    #responseButtons {
+        /* Adjust container styles if necessary */
+        /* For example, adjust width, flex-direction, justify-content, etc. */
+    }
+}
+
+
 /* Desktop */
 @media (min-width: 769px) {
     
