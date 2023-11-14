@@ -272,7 +272,7 @@ function displayPlayer2CardBack() {
     playerMat.innerHTML = '';
     const cardBackElement = document.createElement('div');
     cardBackElement.classList.add('card', 'card-back');
-    cardBackElement.textContent = '???';
+    cardBackElement.textContent = '';
     playerMat.appendChild(cardBackElement);
 }
 
