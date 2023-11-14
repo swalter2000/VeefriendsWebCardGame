@@ -176,6 +176,22 @@ body {
     }
 }
 
+/*  Very Small Mobile Screen Sizing */
+@media only screen and (min-width: 320px) and (max-width: 380px){
+    #instructionsButton {
+        position: fixed; /* Fixed position */
+        top: 10px; /* Adjust as needed */
+        left: 10px; /* Adjust as needed */
+        z-index: 1000; /* High z-index to ensure it's above other elements */
+        padding: 10px 20px; /* Padding for size */
+        background-color: #4CAF50; /* Background color */
+        color: white; /* Text color */
+        border: none; /* No border */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        margin-top: 60px;
+    }
+}
 /* Styles for screen widths between 370 and 430 pixels */
 @media only screen and (min-width: 370px) and (max-width: 430px) {
     .challenge-buttons button,
@@ -190,6 +206,11 @@ body {
     #responseButtons {
         /* Adjust container styles if necessary */
         /* For example, adjust width, flex-direction, justify-content, etc. */
+    }
+    
+    
+    #instructionsButton:hover {
+        background-color: #45a049; /* Slightly darker on hover */
     }
 }
 
