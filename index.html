@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card Battle Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <button id="instructionsButton">IdealUpdates</button>
+    <div class="game-container">
+        
+        <div id="player2Mat" class="playmat"></div>
+
+        <div id="challengeButtons" class="challenge-buttons">
+            <div id="choiceButtons">
+
+                <button id="btnAura" onclick="proposeChallenge('aura')">Challenge Aura</button>
+                <button id="btnSkill" onclick="proposeChallenge('skill')">Challenge Skill</button>
+                <button id="btnStamina" onclick="proposeChallenge('stamina')">Challenge Stamina</button>
+                
+            </div>
+        
+            <div id="responseButtons" style="display: none;">
+                <button onclick="respondToPlayer2Challenge(true)">Accept</button>
+                <button onclick="respondToPlayer2Challenge(false)">Reject</button>
+            </div>
+        </div>
+
+        <div id="player1Mat" class="playmat"></div>
+    </div>
+
+    
+
+    <script src="game.js"></script>
+    <script>
+        document.getElementById('instructionsButton').addEventListener('click', function() {
+            window.open('instructions.html', '_blank');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+.playmat {
+    width: 90%;
+    margin: 5%;
+    padding: 20px;
+    border: 1px solid #000;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('images/PlaymatBackround.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px; /* Add some space below the playmat */
+
+}
+
+
+.card-back {
+    background-color: #444;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Any other styles for buttons or elements */
+
+.card {
+    width: 100px;
+    height: 140px;
+    margin: 5px;
+    border: 1px solid #555;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    
+        
+    background-size: cover;
+    background-position: center;
+        
+    
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    
+}
+
+.card .rarity {
+    font-size: 14px;
+    color: #d4af37; /* Gold color for rarity */
+}
+
+.button.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+body {
+    background-image: url("images/woodTable.png");
+    background-size: cover; /* This will ensure the image covers the entire page */
+    background-position: center; /* This will center the image in the page */
+    background-attachment: fixed; /* This makes the image stay in place while scrolling */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+}
+
+.challenge-buttons {
+    /* Style your challenge buttons container here if needed */
+    margin: 20px 0; /* Adds margin above and below the button container */
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children horizontally */
+    justify-content: center; /* Center-align children vertically */
+    height: 100vh; /* Optional: Make the container take up full viewport height */
+}
+
+#player2Mat {
+    transform: rotate(180deg);
+}
+#instructionsButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#instructionsButton:hover {
+    background-color: #45a049;
+}
+
+
+/* Mobile ... */
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .playmat {
+        background-image: none;
+    }
+
+    .card {
+        width: 160px; /* Adjusted card width */
+        height: 224px; /* Adjusted card height, maintaining aspect ratio */
+    }
+
+    .card img {
+        width: 100%; /* Adjusted to fit within the card */
+        height: auto;
+    }
+
+    .challenge-buttons button,
+#responseButtons button {
+    font-size: 2em; /* Keep the current font size */
+    padding: 15px 30px; /* Keep the current padding */
+    margin: 0 5px; /* Adjusted margin for consistency */
+    border-radius: 25px; /* Rounded edges for an oval shape */
+    border: 2px solid transparent; /* Clear border, adjust as needed */
+    background-color: #4CAF50; /* Background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.challenge-buttons button:hover,
+#responseButtons button:hover {
+    background-color: #45a049; /* Slightly darker shade on hover */
+}
+
+.challenge-buttons,
+#responseButtons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Adjust width as needed */
+    display: flex;
+    justify-content: space-around; /* Evenly space buttons */
+}
+
+    .challenge-buttons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%; /* Adjust width as needed */
+        display: flex;
+        justify-content: space-around; /* Evenly space buttons */
+    }
+
+    .challenge-buttons button {
+        font-size: 2em; /* Keep the larger font size */
+        padding: 15px 30px; /* Adjust padding as needed */
+        margin: 0 5px; /* Add margin between buttons */
+    }
+
+
+    #player1Mat {
+        margin-top: 70px; /* Add top margin */
+        /* Other styles as needed */
+    }
+
+    /* Adjust the player2Mat for mobile */
+    #player2Mat {
+        margin-bottom: 150px; /* Add bottom margin */
+        transform: rotate(180deg); /* Keep the flip for player 2 */
+        /* Other styles as needed */
+    }
+    #instructionsButton{
+        padding: 17px;
+        font-size: 1em;
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    
+    .challenge-buttons button,
+    #responseButtons button {
+        font-size: 2em;
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 25px; /* Rounded edges */
+        border: 2px solid transparent; /* Clear border, adjust thickness as needed */
+        background-color: #4CAF50; /* Adjust the background color as needed */
+        color: white;
+        cursor: pointer;
+        /* Other styles as needed */
+    }
+
+    .challenge-buttons button:hover,
+    #responseButtons button:hover {
+        background-color: #45a049; /* Slightly darker shade on hover */
+    }
+}
