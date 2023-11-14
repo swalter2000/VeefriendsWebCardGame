@@ -124,36 +124,28 @@ body {
         height: auto;
     }
 
+        /* Styles for challenge buttons */
     .challenge-buttons button,
-#responseButtons button {
-    font-size: 2em; /* Keep the current font size */
-    padding: 15px 30px; /* Keep the current padding */
-    margin: 0 5px; /* Adjusted margin for consistency */
-    border-radius: 25px; /* Rounded edges for an oval shape */
-    border: 2px solid transparent; /* Clear border, adjust as needed */
-    background-color: #4CAF50; /* Background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Cursor style */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
-}
+    #responseButtons button {
+        font-size: 0.8em; /* Further reduced font size */
+        padding: 8px 10px; /* Reduced padding */
+        margin: 0 3px; /* Reduced margin */
+        border-radius: 20px; /* Slightly less rounded edges */
+        border: 2px solid transparent; /* Clear border */
+        background-color: #4CAF50; /* Background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Cursor style */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
 
-.challenge-buttons button:hover,
-#responseButtons button:hover {
-    background-color: #45a049; /* Slightly darker shade on hover */
-}
+    .challenge-buttons button:hover,
+    #responseButtons button:hover {
+        background-color: #45a049; /* Darker shade on hover */
+    }
 
-.challenge-buttons,
-#responseButtons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%; /* Adjust width as needed */
-    display: flex;
-    justify-content: space-around; /* Evenly space buttons */
-}
-
-    .challenge-buttons {
+    /* Styles for button containers */
+    .challenge-buttons,
+    #responseButtons {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -161,13 +153,10 @@ body {
         width: 90%; /* Adjust width as needed */
         display: flex;
         justify-content: space-around; /* Evenly space buttons */
+        flex-direction: row; /* Align buttons horizontally */
     }
 
-    .challenge-buttons button {
-        font-size: 2em; /* Keep the larger font size */
-        padding: 15px 30px; /* Adjust padding as needed */
-        margin: 0 5px; /* Add margin between buttons */
-    }
+
 
 
     #player1Mat {
